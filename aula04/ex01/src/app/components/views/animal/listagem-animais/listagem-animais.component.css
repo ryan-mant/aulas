@@ -1,0 +1,33 @@
+.listagem-animais{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 250px;
+  height: 220px;
+  border: 1px solid cornflowerblue;
+  font-family: monospace;
+  margin: 3px;
+  
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.main button{
+  margin: 5px;
+  border: 1px bisque;
+  border-radius: 10px;
+  color: white;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+.main button:hover{
+  background-color: blue;
+
+}
+
+

@@ -1,0 +1,32 @@
+.adicionar-animal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.adicionar-animal input, button{
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  margin: 5px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.adicionar-animal button{
+  background-color: cornflowerblue;
+  color: white;
+  font-family: cursive;
+
+}
+
+.adicionar-animal button:hover{
+  cursor: pointer;
+  background-color: blue;
+  
+}
+
+

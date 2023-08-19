@@ -1,0 +1,21 @@
+.animais{
+  flex-direction: column;
+  font-family: cursive;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  margin: 5px;
+}
+
+.animais p{
+  border: 1px solid black;
+}
+.animais p:hover{
+  color: pink;
+  background-color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+.main{
+  display: flex;
+}

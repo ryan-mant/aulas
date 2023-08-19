@@ -1,0 +1,19 @@
+.menu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu a{
+  width: 180px;
+  background-color: cornflowerblue;
+  color: white;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  text-decoration: none;
+  border-radius: 60px;
+  margin-top: 7px;
+}
+
+

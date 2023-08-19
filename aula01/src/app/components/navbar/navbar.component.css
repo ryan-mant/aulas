@@ -1,0 +1,15 @@
+ul{
+  display: flex;
+  flex-direction: row;
+}
+a{
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: cursive;
+  font-size: 25px;
+}
+a:hover{
+  font-size: 30px;
+  box-shadow: 3px solid black;
+}

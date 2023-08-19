@@ -5,6 +5,26 @@ const mongoose = require('mongoose')
 const connectionString = "mongodb+srv://admin:admin123@appdatabase.ry0gm2w.mongodb.net/"
 const Pagamento = require("./models/pagamento")
 const pagamento = require('./models/pagamento')
+app.use(express.json())
+
+app.get("/listar", async(req,res) =>{
+    try{
+        let dataReferencia= req.query.dataReferencia
+        let pagamentos = await Pagamento.find({dataPagamento: dataReferencia})
+
+        valor = 0
+        for (const pagamento of pagamentos) {
+            valor += pagamento.valorPagamento
+        }
+        console.log(valor)
+        
+
+        
+        return res.status(200).json({pagamentos, valor})
+    }catch(error){
+        console.log(error)
+    }
+})
 
 app.get("/listar-pagamentos", async(req, res)=>{
     try{
@@ -15,12 +35,7 @@ app.get("/listar-pagamentos", async(req, res)=>{
     }
 })
 app.post("/cadastrar-pagamento", async (req, res)=>{
-    let {
-        descricao,
-        dataPagamento,
-        tipoPagamento,
-        valorPagamento
-    } = req.body
+    let pagamento = {...req.body}
     try{
         await Pagamento.create(pagamento)
         return res.status(201).json("Pagamendo cadastrado")

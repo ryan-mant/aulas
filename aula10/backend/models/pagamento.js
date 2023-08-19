@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const pagamentoSchema = mongoose.Schema9({
+const pagamentoSchema = mongoose.Schema({
     descricao: {type: String, required: true},
     dataPagamento: {type: Date, required: true},
     tipoPagamento: {type: String, required: true},
